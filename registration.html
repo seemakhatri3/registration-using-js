@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/lock?f=classic&s=duotone">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script> </script>
+</head>
+
+<body>
+
+        <div class="form">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn" onclick="btn()"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">LogIn</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <div class="social-media">
+                    <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+        
+                <form id="login" class="input-group">
+        
+                    <input type="text" class="input_field" id="user" placeholder="User ID" required>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" class="input_field" id="password" placeholder="Enter Your password" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="checkbox" class="checkbox"><span>remember password</span>
+                    <button type="submit" class="submit-btn" onclick="login()">Log In</button>
+                    <div class="message">
+                    <!-- <div class="success" id="success" onclick="massage()"></div> You are not Registered!!</div> -->
+                    </div>
+                </form>
+                <form id="register" class="input-group">
+        
+                    <input type="email" class="input_field" placeholder="Enter Your Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" class="input_field" placeholder="Enter Your password" required>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn" onclick="register()">register</button>
+                    <div class="message">
+                    <!-- <div class="success" id="success">you are registerd now!! Please Login.</div> -->
+                    </div>
+                </form>
+        
+            </div>
+        
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            function register() {
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+                function login() {
+
+                    x.style.left = "50px";
+                    y.style.left = "400px";
+                    z.style.left = "0";
+                }
+            //         function massage() {
+
+                  
+            //         var user = document.getElementById("user");
+            //         var password = document.getElementById("passwoed")
+            //         var success = document.getElementById("success")
+            //         var danger = document.getElementById("danger")
+
+            //         const success = document.getElementById("success");
+            //         if (user.value === '' || password.value === ''|| success.value==='') { danger.style.display = 'block'; }
+            //         else {
+            //             setTimeout(() => {
+            //                 user.value = '';
+            //                 password.value = '';
+                            
+
+
+            //             }, 2000);
+            //             danger.style.display = 'block';
+            //         }
+            //    }
+            
+            
+        </script>
+        </body>
+        
+        </html>
